@@ -1,5 +1,7 @@
 # ws-chans
 
+[![Build Status](https://travis-ci.org/shmish111/ws-chans.svg?branch=master)](https://travis-ci.org/shmish111/ws-chans)
+
 Websockets represent a channel between a client and a server. `ws-chans` carries this concept deeper into your code by setting up an `Control.Concurrent.Chan.Unagi.InChan` and an `Control.Concurrent.Chan.Unagi.OutChan` as an interface to a websocket server. To send a message to the server you simply write a message to the `InChan`. To receive a message from the server you read from the `OutChan`.
 
 The tests are probably the best place to look at some example usage but basically:
