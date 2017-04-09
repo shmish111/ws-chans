@@ -1,8 +1,7 @@
 module Main where
 
-import Network.WebSockets.Chan.UnagiSpec as US
+import           Network.WebSockets.Chan.UnagiSpec as US
+import           Test.Framework                    (defaultMain)
 
 main :: IO ()
-main = do
-    US.spec
-    putStrLn "Test suite not yet implemented"
+main = defaultMain US.tests

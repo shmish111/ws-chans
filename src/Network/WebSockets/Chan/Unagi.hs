@@ -1,10 +1,12 @@
-module Network.WebSockets.Chan.Unagi where
+module Network.WebSockets.Chan.Unagi
+  ( module Control.Concurrent.Chan.Unagi
+  , newChans
+  ) where
 
-import           Control.Concurrent            (forkIO)
 import           Control.Concurrent.Async      (Concurrently (..),
                                                 runConcurrently)
 import qualified Control.Concurrent.Async      as A
-import           Control.Concurrent.Chan.Unagi (InChan, OutChan)
+import           Control.Concurrent.Chan.Unagi
 import qualified Control.Concurrent.Chan.Unagi as Unagi
 import           Control.Exception             (SomeException (..), catch,
                                                 finally, fromException, throw)
